@@ -1,0 +1,57 @@
+<!-- <nav>
+  <div class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a href="">Certificate</a>
+      </div>
+
+      <div class="collapse navbar-collapse">
+        <div class="nav navbar-nav navbar-right"></div>
+      </div>
+    </div>
+  </div>
+</nav> -->
+<app-header></app-header>
+
+<div class="container pt-5">
+  <div class="row">
+    <div class="col-6">
+      <button type="button" class="btn btn-primary" (click)="newCert()">
+        AddCertificate
+      </button>
+    </div>
+    <!-- <div class="col-6">
+      <button type="button" class="btn btn-danger" (click)="allDelete()">
+        RemoveCertificate
+      </button>
+    </div> -->
+  </div>
+</div>
+
+<!-- <a (click)="edit(infos)"> -->
+<div class="container-fluid p-5">
+  <!-- <div class="grid-item"> -->
+  <div class="row">
+    <!-- <div class="col-3"> -->
+    <div
+      class="card col-3 cards"
+      *ngFor="let inofs of info; let i = index"
+      [id]="i"
+      (click)="edit(i)"
+    >
+      <img class="card-img-top" [src]="imgUrl" alt="no image" />
+      <hr />
+      <div class="card-body">
+        <h4 class="card-title">{{ inofs.name }}</h4>
+        <p class="card-text">{{ inofs.description }}</p>
+        <p class="card-text">{{ inofs.classification }}</p>
+        <!-- <button type="button" class="btn btn-danger" (click)="onDelete(i)">
+            Remove
+          </button> -->
+      </div>
+    </div>
+    <!-- </div> -->
+  </div>
+  <!-- </div> -->
+</div>
+<!-- </a> -->

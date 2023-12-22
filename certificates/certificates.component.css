@@ -1,0 +1,53 @@
+.navbar-brand{
+    color: blue;
+}
+
+.cards{
+    cursor: pointer;
+    /* margin-inline-start: 10px; */
+    /* gap: 10px; */
+    /* margin-right: 5px; */
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* text-align: center; */
+    margin: 50px;
+}
+
+button{
+    cursor: pointer;
+}
+
+/* .grid-container {
+    display: grid;
+    grid-template-rows: 80px 200px;
+} */
+
+img{
+    width: fit-content;
+    height: 150px;
+    object-fit: contain;
+    /* padding: 0;
+    padding-right: 0px;
+    padding-left: 0px;
+    border: solid black; */
+}
+
+/* .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+} */
+
+/* .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    padding: 10px;
+} */
+
+/* .grid-item{
+    /* display: grid;
+    flex-direction: row; */
+    /* display: flex;
+    flex-direction: row;
+} */
